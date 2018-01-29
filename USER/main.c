@@ -5,14 +5,6 @@
 #include "oled.h"
 
 
-//ALIENTEK 探索者STM32F407开发板 实验12
-//OLED显示实验-库函数版本 
-//技术支持：www.openedv.com
-//淘宝店铺：http://eboard.taobao.com  
-//广州市星翼电子科技有限公司  
-//作者：正点原子 @ALIENTEK
-
-
 int main(void)
 { 
 	u8 t=0;
@@ -21,7 +13,7 @@ int main(void)
 	uart_init(115200);	//初始化串口波特率为115200
 	LED_Init();					//初始化LED
  	OLED_Init();				//初始化OLED
-  OLED_ShowString(0,0,"ALIENTEK",24);  
+  OLED_ShowString(0,0,"WELCOME",24);  
 	OLED_ShowString(0,24, "0.96' OLED TEST",16);  
  	OLED_ShowString(0,40,"ATOM 2014/5/4",12);  
  	OLED_ShowString(0,52,"ASCII:",12);  
